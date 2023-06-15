@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -69,6 +69,93 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cell">
 
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3,089 × 3
+# Groups:   state_name [51]
+   state_name ec_county pop2018
+   &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;
+ 1 Alabama        0.721   55200
+ 2 Alabama        0.743  208107
+ 3 Alabama        0.414   25782
+ 4 Alabama        0.632   22527
+ 5 Alabama        0.726   57645
+ 6 Alabama        0.355   10352
+ 7 Alabama        0.460   20025
+ 8 Alabama        0.602  115098
+ 9 Alabama        0.498   33826
+10 Alabama        0.605   25853
+# ℹ 3,079 more rows</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>     county      county_name        num_below_p50          pop2018        
+ Min.   : 1001   Length:3089        Min.   :     52.3   Min.   :     544  
+ 1st Qu.:18161   Class :character   1st Qu.:   1627.0   1st Qu.:   12630  
+ Median :29135   Mode  :character   Median :   3353.5   Median :   27887  
+ Mean   :30219                      Mean   :  10599.6   Mean   :  108010  
+ 3rd Qu.:45049                      3rd Qu.:   7327.0   3rd Qu.:   72728  
+ Max.   :56045                      Max.   :1576717.9   Max.   :10098052  
+                                    NA's   :2           NA's   :106       
+   ec_county       ec_se_county     child_ec_county  child_ec_se_county
+ Min.   :0.2947   Min.   :0.00436   Min.   :0.2219   Min.   :0.0120    
+ 1st Qu.:0.6956   1st Qu.:0.00914   1st Qu.:0.6787   1st Qu.:0.0224    
+ Median :0.8068   Median :0.01190   Median :0.8155   Median :0.0299    
+ Mean   :0.8145   Mean   :0.01341   Mean   :0.8253   Mean   :0.0325    
+ 3rd Qu.:0.9368   3rd Qu.:0.01580   3rd Qu.:0.9621   3rd Qu.:0.0399    
+ Max.   :1.3597   Max.   :0.05023   Max.   :1.6114   Max.   :0.0911    
+ NA's   :71       NA's   :71        NA's   :360      NA's   :360       
+ ec_grp_mem_county ec_high_county   ec_high_se_county child_high_ec_county
+ Min.   :0.1874    Min.   :0.7006   Min.   :0.00475   Min.   :0.2453      
+ 1st Qu.:0.7083    1st Qu.:1.1349   1st Qu.:0.01006   1st Qu.:0.7903      
+ Median :0.8405    Median :1.2582   Median :0.01350   Median :0.9422      
+ Mean   :0.8503    Mean   :1.2526   Mean   :0.01475   Mean   :0.9559      
+ 3rd Qu.:0.9965    3rd Qu.:1.3843   3rd Qu.:0.01779   3rd Qu.:1.1201      
+ Max.   :1.4759    Max.   :1.7151   Max.   :0.05099   Max.   :1.6912      
+ NA's   :77        NA's   :71       NA's   :71        NA's   :360         
+ child_high_ec_se_county ec_grp_mem_high_county exposure_grp_mem_county
+ Min.   :0.0116          Min.   :0.6227         Min.   :0.2552         
+ 1st Qu.:0.0225          1st Qu.:1.1345         1st Qu.:0.7655         
+ Median :0.0305          Median :1.2801         Median :0.9057         
+ Mean   :0.0330          Mean   :1.2706         Mean   :0.9061         
+ 3rd Qu.:0.0405          3rd Qu.:1.4160         3rd Qu.:1.0527         
+ Max.   :0.0910          Max.   :1.7658         Max.   :1.4863         
+ NA's   :360             NA's   :77             NA's   :77             
+ exposure_grp_mem_high_county child_exposure_county child_high_exposure_county
+ Min.   :0.5101               Min.   :0.2169        Min.   :0.2173            
+ 1st Qu.:0.9319               1st Qu.:0.6736        1st Qu.:0.7153            
+ Median :1.0817               Median :0.8166        Median :0.8687            
+ Mean   :1.0786               Mean   :0.8280        Mean   :0.8850            
+ 3rd Qu.:1.2274               3rd Qu.:0.9648        3rd Qu.:1.0409            
+ Max.   :1.6662               Max.   :1.6343        Max.   :1.6552            
+ NA's   :77                   NA's   :360           NA's   :360               
+ bias_grp_mem_county bias_grp_mem_high_county child_bias_county
+ Min.   :-0.10809    Min.   :-0.53618         Min.   :-0.1440  
+ 1st Qu.: 0.03081    1st Qu.:-0.22170         1st Qu.:-0.0183  
+ Median : 0.06397    Median :-0.17908         Median : 0.0020  
+ Mean   : 0.06416    Mean   :-0.18797         Mean   : 0.0012  
+ 3rd Qu.: 0.09545    3rd Qu.:-0.14334         3rd Qu.: 0.0199  
+ Max.   : 0.33457    Max.   :-0.04325         Max.   : 0.1627  
+ NA's   :77          NA's   :77               NA's   :360      
+ child_high_bias_county clustering_county support_ratio_county
+ Min.   :-0.3710        Min.   :0.07162   Min.   :0.6968      
+ 1st Qu.:-0.1112        1st Qu.:0.10269   1st Qu.:0.9868      
+ Median :-0.0791        Median :0.11457   Median :0.9937      
+ Mean   :-0.0854        Mean   :0.11646   Mean   :0.9889      
+ 3rd Qu.:-0.0522        3rd Qu.:0.12724   3rd Qu.:0.9967      
+ Max.   : 0.0698        Max.   :0.26097   Max.   :1.0000      
+ NA's   :360                                                  
+ volunteering_rate_county civic_organizations_county
+ Min.   :0.00965          Min.   :0.00349           
+ 1st Qu.:0.05528          1st Qu.:0.01402           
+ Median :0.07328          Median :0.01778           
+ Mean   :0.07807          Mean   :0.01976           
+ 3rd Qu.:0.09396          3rd Qu.:0.02306           
+ Max.   :0.30874          Max.   :0.19543           
+                                                    </code></pre>
+</div>
 </div>
 
 </main>
